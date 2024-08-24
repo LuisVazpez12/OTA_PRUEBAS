@@ -6,7 +6,7 @@ import machine,time
 from machine import Pin
 
 botUp = Pin(22, Pin.IN)
-
+led= Pin(2,Pin.OUT)
 def upa():
     firmware_url = "https://github.com/LuisVazpez12/OTA_PRUEBAS/"
     ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
@@ -18,7 +18,6 @@ while(1):
         time.sleep(5)
 
 while(1):
-  led= Pin(2,Pin.OUT)
   led.on()
   time.sleep_ms(800)
   led.off()
