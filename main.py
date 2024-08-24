@@ -16,11 +16,10 @@ while(1):
     if (botUp.value()==1):
         print(upa())
         time.sleep(5)
-
-while(1):
-  led.on()
-  time.sleep_ms(800)
-  led.off()
-  time.sleep_ms(800)
+    elif:
+        led.on()
+        time.sleep_ms(800)
+        led.off()
+        time.sleep_ms(800)
 
 
