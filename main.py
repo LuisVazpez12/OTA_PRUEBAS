@@ -12,7 +12,7 @@ def upa():
     ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
     ota_updater.download_and_install_update_if_available()
 def main():
-    coco=1
+    led.on()
 
     
 while(1):
