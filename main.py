@@ -18,7 +18,7 @@ def upa():
 def main():
      led1.on()
      time.sleep_ms(1000)
-     led.off()
+     led1.off()
      time.sleep_ms(1000)
 
 while(1):
