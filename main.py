@@ -13,7 +13,7 @@ def upa():
     ota_updater.download_and_install_update_if_available()
 def main():
      led.on()
-     time.sleep_ms(800)
+     time.sleep_ms(1000)
      led.off()
      time.sleep_ms(800)
 
