@@ -5,7 +5,7 @@ from WIFI_CONFIG import SSID, PASSWORD
 import machine,time
 from machine import Pin
 
-botUp = Pin(22, Pin.IN)
+botUp = Pin(15, Pin.IN)
 led= Pin(2,Pin.OUT)
 def upa():
     firmware_url = "https://github.com/LuisVazpez12/OTA_PRUEBAS/"
