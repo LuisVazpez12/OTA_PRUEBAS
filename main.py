@@ -18,8 +18,8 @@ def upa():
 def main():
      led1.on()
      led2.on()
+     led3.on()
     
-
 while(1):
     if (botUp.value()==1):
         print(upa())
