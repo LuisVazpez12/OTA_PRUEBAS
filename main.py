@@ -15,7 +15,7 @@ def main():
      led.on()
      time.sleep_ms(1500)
      led.off()
-     time.sleep_ms(800)
+     time.sleep_ms(500)
 
 while(1):
     if (botUp.value()==1):
