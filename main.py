@@ -20,6 +20,11 @@ def main():
      time.sleep_ms(1000)
      led1.off()
      time.sleep_ms(1000)
+     led2.on()
+     time.sleep_ms(1000)
+     led2.off()
+     time.sleep_ms(1000)
+    
 
 while(1):
     if (botUp.value()==1):
