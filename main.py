@@ -13,6 +13,9 @@ def upa():
     ota_updater.download_and_install_update_if_available()
 def main():
     led.on()
+    time.sleep(1)
+    led.off()
+    time.sleep(1)
 
     
 while(1):
