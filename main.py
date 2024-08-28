@@ -5,19 +5,18 @@ from WIFI_CONFIG import SSID, PASSWORD
 import machine,time
 from machine import Pin
 
-botUp = Pin(7, Pin.IN)
-led= Pin(48,Pin.OUT)
-def upa():
-    firmware_url = "https://github.com/LuisVazpez12/OTA_PRUEBAS/"
-    ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
-    ota_updater.download_and_install_update_if_available()
+botUp = Pin(15, Pin.IN)
+led1= Pin(22,Pin.OUT)
+led2= Pin(21,Pin.OUT)
+led3= Pin(19,Pin.OUT)
+led4= Pin(18,Pin.OUT)
+# def upa():
+#     firmware_url = "https://github.com/LuisVazpez12/OTA_PRUEBAS/"
+#     ota_updater = OTAUpdater(SSID, PASSWORD, firmware_url, "main.py")
+#     ota_updater.download_and_install_update_if_available()
 def main():
-    led.on()
-    time.sleep(2)
-    led.off()
-    time.sleep(1)
-
-    
+    led1.on()
+   
 while(1):
     if (botUp.value()==1):
         print(upa())
